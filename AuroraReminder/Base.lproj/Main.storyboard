@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Aurora Reminder View Controller-->
+        <!--Aurora-->
         <scene sceneID="7Xu-AM-B4j">
             <objects>
                 <tableViewController id="SRc-a1-gek" customClass="AuroraReminderViewController" customModule="AuroraReminder" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="SRc-a1-gek" id="f7D-8M-0aB"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Pyv-9Y-HQj"/>
+                    <navigationItem key="navigationItem" title="Aurora" id="Pyv-9Y-HQj">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DuA-a7-f7N">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addReminder:" destination="SRc-a1-gek" id="p2r-OC-z9A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AwC-ob-U0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

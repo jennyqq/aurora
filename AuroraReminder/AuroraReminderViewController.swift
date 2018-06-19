@@ -10,7 +10,7 @@ import UIKit
 
 class AuroraReminderViewController: UITableViewController {
 
-    let items = ["first", "second", "third"]
+    var items = ["first", "second", "third"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +38,33 @@ class AuroraReminderViewController: UITableViewController {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    //MARK add reminder
+    
+    @IBAction func addReminder(_ sender: UIBarButtonItem) {
+        
+        let alert = UIAlertController(title: "Add reminder", message: "", preferredStyle: .alert)
+        
+        var textField = UITextField()
+        
+        alert.addTextField { (text) in
+            text.placeholder = "Please enter new item"
+            
+            textField = text
+        }
+        
+        let action = UIAlertAction(title: "Add", style: .default) { (action) in
+           
+            self.items.append(textField.text!)
+            
+            self.tableView.reloadData()
+        }
+        
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
     }
 }
 
