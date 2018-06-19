@@ -10,15 +10,32 @@ import UIKit
 
 class AuroraReminderViewController: UITableViewController {
 
-    var items = ["first", "second", "third"]
+    
+    var items = [Item]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let total = 16
+        items = [Item]()
+        
+        for i in 0...total {
+            let item = Item()
+            item.value = String(i)
+            items.append(item)
+        }
+ 
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoListCell", for: indexPath)
-        cell.textLabel?.text = items[indexPath.row]
+        
+        let item = items[indexPath.row]
+        
+        cell.textLabel?.text = item.value
+        cell.accessoryType = item.done ? .checkmark : .none
+        
+        
         return cell
     }
     
@@ -31,12 +48,13 @@ class AuroraReminderViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print (items[indexPath.row])
-        if (tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark) {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
-        } else {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-        }
+ 
+        let item = items[indexPath.row]
+        
+        item.done = !item.done
+        
+        tableView.cellForRow(at: indexPath)?.accessoryType = item.done ? .checkmark : .none
+       
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
@@ -56,7 +74,11 @@ class AuroraReminderViewController: UITableViewController {
         
         let action = UIAlertAction(title: "Add", style: .default) { (action) in
            
-            self.items.append(textField.text!)
+            let item = Item()
+            item.value = textField.text!
+            item.done = false;
+            
+            self.items.append(item)
             
             self.tableView.reloadData()
         }
