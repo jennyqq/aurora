@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9E2FB52420D940E800350E97 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2FB52320D940E800350E97 /* Item.swift */; };
+		9E2FB52720D948E400350E97 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2FB52620D948E400350E97 /* Item.swift */; };
 		9EA4AE6F20CD67FA0050D6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4AE6E20CD67FA0050D6D9 /* AppDelegate.swift */; };
 		9EA4AE7120CD67FA0050D6D9 /* AuroraReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4AE7020CD67FA0050D6D9 /* AuroraReminderViewController.swift */; };
 		9EA4AE7420CD67FA0050D6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA4AE7220CD67FA0050D6D9 /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9E2FB52320D940E800350E97 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9E2FB52620D948E400350E97 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9EA4AE6B20CD67FA0050D6D9 /* AuroraReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuroraReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA4AE6E20CD67FA0050D6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EA4AE7020CD67FA0050D6D9 /* AuroraReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraReminderViewController.swift; sourceTree = "<group>"; };
@@ -37,13 +37,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9E2FB52220D940AE00350E97 /* Data Model */ = {
+		9E2FB52520D948CE00350E97 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				9E2FB52320D940E800350E97 /* Item.swift */,
+				9E2FB52620D948E400350E97 /* Item.swift */,
 			);
-			name = "Data Model";
-			path = "New Group";
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 		9EA4AE6220CD67FA0050D6D9 = {
@@ -65,13 +64,13 @@
 		9EA4AE6D20CD67FA0050D6D9 /* AuroraReminder */ = {
 			isa = PBXGroup;
 			children = (
+				9E2FB52520D948CE00350E97 /* Data Model */,
 				9EA4AE6E20CD67FA0050D6D9 /* AppDelegate.swift */,
 				9EA4AE7020CD67FA0050D6D9 /* AuroraReminderViewController.swift */,
 				9EA4AE7220CD67FA0050D6D9 /* Main.storyboard */,
 				9EA4AE7520CD67FD0050D6D9 /* Assets.xcassets */,
 				9EA4AE7720CD67FD0050D6D9 /* LaunchScreen.storyboard */,
 				9EA4AE7A20CD67FD0050D6D9 /* Info.plist */,
-				9E2FB52220D940AE00350E97 /* Data Model */,
 			);
 			path = AuroraReminder;
 			sourceTree = "<group>";
@@ -148,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA4AE7120CD67FA0050D6D9 /* AuroraReminderViewController.swift in Sources */,
-				9E2FB52420D940E800350E97 /* Item.swift in Sources */,
+				9E2FB52720D948E400350E97 /* Item.swift in Sources */,
 				9EA4AE6F20CD67FA0050D6D9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
