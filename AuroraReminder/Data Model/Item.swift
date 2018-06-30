@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Item {
-    var value: String = ""
-    var done: Bool = false
+class Item: Object{
+    @objc dynamic var value: String = ""
+    @objc dynamic var done: Bool = false
+    var parentCategory = LinkingObjects(fromType: Category.self, property: "items")
 }

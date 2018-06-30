@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E13EC7420DC2A4000526658 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13EC7320DC2A4000526658 /* Category.swift */; };
+		9E13EC7720DC2CE900526658 /* AuroraCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E13EC7620DC2CE900526658 /* AuroraCategoryViewController.swift */; };
 		9E2FB52720D948E400350E97 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2FB52620D948E400350E97 /* Item.swift */; };
 		9EA4AE6F20CD67FA0050D6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4AE6E20CD67FA0050D6D9 /* AppDelegate.swift */; };
 		9EA4AE7120CD67FA0050D6D9 /* AuroraReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA4AE7020CD67FA0050D6D9 /* AuroraReminderViewController.swift */; };
 		9EA4AE7420CD67FA0050D6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA4AE7220CD67FA0050D6D9 /* Main.storyboard */; };
 		9EA4AE7620CD67FD0050D6D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA4AE7520CD67FD0050D6D9 /* Assets.xcassets */; };
 		9EA4AE7920CD67FD0050D6D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA4AE7720CD67FD0050D6D9 /* LaunchScreen.storyboard */; };
+		9EDDCCA420E523C10072B24C /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDDCCA320E523C10072B24C /* SwipeViewController.swift */; };
 		E3AA78E498441DCC4F61E1E0 /* Pods_AuroraReminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C32467DCE45237E40737D73 /* Pods_AuroraReminder.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +23,8 @@
 		4C32467DCE45237E40737D73 /* Pods_AuroraReminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AuroraReminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B49C9B401832959E69D6E1 /* Pods-AuroraReminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuroraReminder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AuroraReminder/Pods-AuroraReminder.debug.xcconfig"; sourceTree = "<group>"; };
 		8CD5855A5970D8DD03DC7C50 /* Pods-AuroraReminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AuroraReminder.release.xcconfig"; path = "Pods/Target Support Files/Pods-AuroraReminder/Pods-AuroraReminder.release.xcconfig"; sourceTree = "<group>"; };
+		9E13EC7320DC2A4000526658 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9E13EC7620DC2CE900526658 /* AuroraCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuroraCategoryViewController.swift; sourceTree = "<group>"; };
 		9E2FB52620D948E400350E97 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9EA4AE6B20CD67FA0050D6D9 /* AuroraReminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuroraReminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA4AE6E20CD67FA0050D6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +33,7 @@
 		9EA4AE7520CD67FD0050D6D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EA4AE7820CD67FD0050D6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EA4AE7A20CD67FD0050D6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDDCCA320E523C10072B24C /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +57,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9E13EC7520DC2BF100526658 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9EA4AE7020CD67FA0050D6D9 /* AuroraReminderViewController.swift */,
+				9E13EC7620DC2CE900526658 /* AuroraCategoryViewController.swift */,
+				9EDDCCA320E523C10072B24C /* SwipeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		9E2FB52520D948CE00350E97 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
+				9E13EC7320DC2A4000526658 /* Category.swift */,
 				9E2FB52620D948E400350E97 /* Item.swift */,
 			);
 			path = "Data Model";
@@ -80,9 +97,9 @@
 		9EA4AE6D20CD67FA0050D6D9 /* AuroraReminder */ = {
 			isa = PBXGroup;
 			children = (
+				9E13EC7520DC2BF100526658 /* Controllers */,
 				9E2FB52520D948CE00350E97 /* Data Model */,
 				9EA4AE6E20CD67FA0050D6D9 /* AppDelegate.swift */,
-				9EA4AE7020CD67FA0050D6D9 /* AuroraReminderViewController.swift */,
 				9EA4AE7220CD67FA0050D6D9 /* Main.storyboard */,
 				9EA4AE7520CD67FD0050D6D9 /* Assets.xcassets */,
 				9EA4AE7720CD67FD0050D6D9 /* LaunchScreen.storyboard */,
@@ -175,13 +192,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AuroraReminder/Pods-AuroraReminder-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -214,8 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA4AE7120CD67FA0050D6D9 /* AuroraReminderViewController.swift in Sources */,
+				9E13EC7720DC2CE900526658 /* AuroraCategoryViewController.swift in Sources */,
 				9E2FB52720D948E400350E97 /* Item.swift in Sources */,
 				9EA4AE6F20CD67FA0050D6D9 /* AppDelegate.swift in Sources */,
+				9E13EC7420DC2A4000526658 /* Category.swift in Sources */,
+				9EDDCCA420E523C10072B24C /* SwipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
